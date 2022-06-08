@@ -112,20 +112,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" misplaced="YES" text="Player 1:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lv3-Bh-gzr">
-                                <rect key="frame" x="0.0" y="88" width="414" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Player 1:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lv3-Bh-gzr">
+                                <rect key="frame" x="0.0" y="93" width="414" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Player 2:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SJA-Ah-jYP">
-                                <rect key="frame" x="0.0" y="125" width="414" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="ezl-ZP-nGF">
-                                <rect key="frame" x="20" y="162" width="372.5" height="372.5"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="ezl-ZP-nGF">
+                                <rect key="frame" x="20.5" y="262" width="372.5" height="372.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="O1J-mo-xWQ">
                                         <rect key="frame" x="0.0" y="0.0" width="372.5" height="91"/>
@@ -297,20 +291,25 @@
                                     <constraint firstAttribute="width" secondItem="ezl-ZP-nGF" secondAttribute="height" multiplier="1:1" id="fA9-eZ-Ovu"/>
                                 </constraints>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Player 2:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SJA-Ah-jYP">
+                                <rect key="frame" x="-1" y="140" width="414" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6gl-Hc-jxf"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="SJA-Ah-jYP" firstAttribute="leading" secondItem="6gl-Hc-jxf" secondAttribute="leading" id="3xd-jc-evT"/>
                             <constraint firstItem="6gl-Hc-jxf" firstAttribute="trailing" secondItem="SJA-Ah-jYP" secondAttribute="trailing" id="4QS-sx-z7Z"/>
-                            <constraint firstItem="SJA-Ah-jYP" firstAttribute="top" secondItem="Lv3-Bh-gzr" secondAttribute="bottom" constant="16.5" id="7tf-pT-wMO"/>
-                            <constraint firstItem="ezl-ZP-nGF" firstAttribute="top" secondItem="SJA-Ah-jYP" secondAttribute="bottom" constant="118" id="92X-KK-7wG"/>
+                            <constraint firstItem="SJA-Ah-jYP" firstAttribute="top" secondItem="Lv3-Bh-gzr" secondAttribute="bottom" constant="26.5" id="HG5-fl-zVj"/>
                             <constraint firstItem="6gl-Hc-jxf" firstAttribute="trailing" secondItem="Lv3-Bh-gzr" secondAttribute="trailing" id="NZS-db-zKE"/>
                             <constraint firstItem="Lv3-Bh-gzr" firstAttribute="leading" secondItem="6gl-Hc-jxf" secondAttribute="leading" id="RYx-55-Pf7"/>
-                            <constraint firstItem="6gl-Hc-jxf" firstAttribute="bottom" secondItem="ezl-ZP-nGF" secondAttribute="bottom" constant="201" id="T7L-x1-07H"/>
+                            <constraint firstItem="Lv3-Bh-gzr" firstAttribute="top" secondItem="6gl-Hc-jxf" secondAttribute="top" constant="5" id="SDC-Bo-hlp"/>
                             <constraint firstItem="ezl-ZP-nGF" firstAttribute="leading" secondItem="6gl-Hc-jxf" secondAttribute="leading" constant="20.5" id="ZvK-89-8mv"/>
-                            <constraint firstItem="Lv3-Bh-gzr" firstAttribute="top" secondItem="6gl-Hc-jxf" secondAttribute="top" constant="25" id="fVF-hz-qFY"/>
                             <constraint firstItem="ezl-ZP-nGF" firstAttribute="width" secondItem="MX2-YZ-qil" secondAttribute="width" multiplier="0.9" id="qfe-8q-nQb"/>
+                            <constraint firstItem="6gl-Hc-jxf" firstAttribute="bottom" secondItem="ezl-ZP-nGF" secondAttribute="bottom" constant="227.5" id="wWq-Pd-0nq"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="2pT-or-fri"/>
@@ -353,8 +352,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Player 1:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dsf-im-6U9">
+                                <rect key="frame" x="0.0" y="94" width="414" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="fillEqually" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="EHf-3Z-5iv">
-                                <rect key="frame" x="21" y="158" width="372.5" height="372.5"/>
+                                <rect key="frame" x="21" y="271" width="372.5" height="372.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="WBL-I4-VC4">
                                         <rect key="frame" x="0.0" y="0.0" width="372.5" height="119.5"/>
@@ -458,12 +463,6 @@
                                     <constraint firstAttribute="width" secondItem="EHf-3Z-5iv" secondAttribute="height" multiplier="1:1" id="jBW-pg-GTo"/>
                                 </constraints>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Player 1:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dsf-im-6U9">
-                                <rect key="frame" x="0.0" y="94" width="414" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="dgj-fN-ebd"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -473,7 +472,6 @@
                             <constraint firstItem="EHf-3Z-5iv" firstAttribute="width" secondItem="szo-3S-Kvh" secondAttribute="width" multiplier="0.9" id="Jrs-Aa-F1T"/>
                             <constraint firstItem="EHf-3Z-5iv" firstAttribute="leading" secondItem="dgj-fN-ebd" secondAttribute="leading" constant="20" id="Kb2-fX-Cg5"/>
                             <constraint firstItem="dgj-fN-ebd" firstAttribute="trailing" secondItem="Dsf-im-6U9" secondAttribute="trailing" id="Low-bF-IuX"/>
-                            <constraint firstItem="EHf-3Z-5iv" firstAttribute="top" secondItem="ohP-dr-I7o" secondAttribute="bottom" constant="15.5" id="NLM-tD-Zfc"/>
                             <constraint firstItem="Dsf-im-6U9" firstAttribute="top" secondItem="dgj-fN-ebd" secondAttribute="top" constant="6" id="Nsj-1H-AEu"/>
                             <constraint firstItem="Dsf-im-6U9" firstAttribute="leading" secondItem="dgj-fN-ebd" secondAttribute="leading" id="eNE-Sc-8aY"/>
                             <constraint firstItem="dgj-fN-ebd" firstAttribute="bottom" secondItem="EHf-3Z-5iv" secondAttribute="bottom" constant="313.5" id="pZc-zb-8TS"/>

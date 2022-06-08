@@ -146,11 +146,12 @@ class ViewController: UIViewController {
             if (Int(size)! == 3) {
                 self.performSegue(withIdentifier: "showGame", sender: self)
                 self.viewDidLoad()
-            }
-            
-            if (Int(size)! == 4) {
+            } else if (Int(size)! == 4) {
                 self.performSegue(withIdentifier: "show4Game", sender: self)
                 self.viewDidLoad()
+            } else {
+                self.alertMessage("The board size must be 3 or 4!")
+                return ;
             }
             
         }))
